@@ -1,0 +1,328 @@
+2019-01-23 20:53:04.450 +13:00 [INF] User profile is available. Using 'C:\Users\Beast\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 20:53:05.156 +13:00 [FTL] Application startup exception
+System.AggregateException: One or more errors occurred. (Webpack dev middleware failed because of an error while loading 'aspnet-webpack'. Error was: Error: Cannot find module 'aspnet-webpack'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:130:18)
+    at __webpack_require__ (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:20:30)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:109:25)
+    at C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+Current directory is: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest
+) ---> Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Webpack dev middleware failed because of an error while loading 'aspnet-webpack'. Error was: Error: Cannot find module 'aspnet-webpack'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:130:18)
+    at __webpack_require__ (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:20:30)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:109:25)
+    at C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+Current directory is: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest
+
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.Builder.WebpackDevMiddleware.UseWebpackDevMiddleware(IApplicationBuilder appBuilder, WebpackDevMiddlewareOptions options)
+   at ReactCoreLatest.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\Startup.cs:line 69
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+---> (Inner Exception #0) Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Webpack dev middleware failed because of an error while loading 'aspnet-webpack'. Error was: Error: Cannot find module 'aspnet-webpack'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:130:18)
+    at __webpack_require__ (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:20:30)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\ygohstd4.qek:109:25)
+    at C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\4ffbms14.omy:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+Current directory is: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest
+
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)<---
+
+2019-01-23 20:53:05.367 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2019-01-23 20:53:05.386 +13:00 [INF] Request finished in 20.0151ms 500 text/html; charset=utf-8
+2019-01-23 20:53:05.568 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2019-01-23 20:53:05.575 +13:00 [INF] Request finished in 6.8454ms 500 text/html; charset=utf-8
+2019-01-23 21:01:18.842 +13:00 [INF] User profile is available. Using 'C:\Users\Beast\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 21:01:20.228 +13:00 [FTL] Application startup exception
+System.AggregateException: One or more errors occurred. (Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at module.exports (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\webpack.config.js:134:27)
+    at createWebpackDevServer (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\0ftjbllt.qbg:121:49)
+    at C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:186:37)
+    at IncomingMessage.emit (events.js:182:13)) ---> Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at module.exports (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\webpack.config.js:134:27)
+    at createWebpackDevServer (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\0ftjbllt.qbg:121:49)
+    at C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.Builder.WebpackDevMiddleware.UseWebpackDevMiddleware(IApplicationBuilder appBuilder, WebpackDevMiddlewareOptions options)
+   at ReactCoreLatest.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\Startup.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+---> (Inner Exception #0) Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at module.exports (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\webpack.config.js:134:27)
+    at createWebpackDevServer (C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\Beast\AppData\Local\Temp\0ftjbllt.qbg:121:49)
+    at C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\pk431doy.0sc:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)<---
+
+2019-01-23 21:01:20.539 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2019-01-23 21:01:20.554 +13:00 [INF] Request finished in 14.81ms 500 text/html; charset=utf-8
+2019-01-23 21:01:20.719 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2019-01-23 21:01:20.726 +13:00 [INF] Request finished in 6.9434ms 500 text/html; charset=utf-8
+2019-01-23 21:02:17.642 +13:00 [INF] User profile is available. Using 'C:\Users\Beast\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 21:02:19.087 +13:00 [INF] Starting type checking service...
+2019-01-23 21:02:19.087 +13:00 [INF] Using 1 worker with 2048MB memory limit
+2019-01-23 21:02:19.121 +13:00 [INF] Starting type checking service...
+2019-01-23 21:02:19.121 +13:00 [INF] Using 1 worker with 2048MB memory limit
+2019-01-23 21:02:19.317 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2019-01-23 21:02:19.455 +13:00 [INF] Route matched with {action = "Index", controller = "Main"}. Executing action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest)
+2019-01-23 21:02:19.465 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) - Validation state: "Valid"
+2019-01-23 21:02:19.473 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.3451ms.
+2019-01-23 21:02:19.492 +13:00 [INF] Executing ViewResult, running view Index.
+2019-01-23 21:02:19.701 +13:00 [INF] Executed action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) in 243.70860000000002ms
+2019-01-23 21:02:19.734 +13:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Prerendering failed because of error: Error: Cannot find module 'C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\ClientApp\dist\main-server'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at findBootModule (C:\Users\Beast\AppData\Local\Temp\hddpuevi.1ja:157:16)
+    at findRenderToStringFunc (C:\Users\Beast\AppData\Local\Temp\hddpuevi.1ja:162:27)
+    at renderToStringImpl (C:\Users\Beast\AppData\Local\Temp\hddpuevi.1ja:121:50)
+    at C:\Users\Beast\AppData\Local\Temp\qe3lazuy.4ff:166:18
+    at IncomingMessage.<anonymous> (C:\Users\Beast\AppData\Local\Temp\qe3lazuy.4ff:186:37)
+    at IncomingMessage.emit (events.js:182:13)
+Current directory is: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest
+
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at AspNetCore.Views_Main_Index.ExecuteAsync() in C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\Views\Main\Index.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 21:02:19.782 +13:00 [INF] Request finished in 465.6611ms 500 text/html; charset=utf-8
+2019-01-23 21:02:19.974 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2019-01-23 21:02:19.993 +13:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\wwwroot\favicon.ico'
+2019-01-23 21:02:19.993 +13:00 [INF] Request finished in 19.8311ms 200 image/x-icon
+2019-01-23 21:02:24.898 +13:00 [INF] No type errors found
+2019-01-23 21:02:24.898 +13:00 [INF] Version: typescript 3.0.1
+2019-01-23 21:02:24.898 +13:00 [INF] Time: 5455ms
+2019-01-23 21:02:24.901 +13:00 [INF] Node will restart because file changed: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\wwwroot\dist\main-client.js
+2019-01-23 21:02:24.906 +13:00 [INF] webpack built 8929b9f59a7fc436a7ec in 5818ms
+2019-01-23 21:02:25.054 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: Hash: 8929b9f59a7fc436a7ec
+Version: webpack 4.23.1
+Time: 5818ms
+Built at: 01/23/2019 9:02:24 PM
+                               Asset      Size       Chunks                    Chunk Names
+41b61ebfee29e470850ed2d2d889e33f.png    55 KiB               [emitted]         
+                      main-client.js   617 KiB  main-client  [emitted]  [big]  main-client
+                  main-client.js.map  29.9 KiB  main-client  [emitted]         main-client
+Entrypoint main-client [big] = main-client.js main-client.js.map
+2019-01-23 21:02:25.054 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: Compiled successfully.
+2019-01-23 21:02:25.242 +13:00 [INF] No type errors found
+2019-01-23 21:02:25.242 +13:00 [INF] Version: typescript 3.0.1
+2019-01-23 21:02:25.242 +13:00 [INF] Time: 5461ms
+2019-01-23 21:04:37.442 +13:00 [INF] User profile is available. Using 'C:\Users\Beast\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 21:04:38.908 +13:00 [INF] Starting type checking service...
+2019-01-23 21:04:38.908 +13:00 [INF] Using 1 worker with 2048MB memory limit
+2019-01-23 21:04:38.941 +13:00 [INF] Starting type checking service...
+2019-01-23 21:04:38.941 +13:00 [INF] Using 1 worker with 2048MB memory limit
+2019-01-23 21:04:39.157 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2019-01-23 21:04:39.275 +13:00 [INF] Route matched with {action = "Index", controller = "Main"}. Executing action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest)
+2019-01-23 21:04:39.285 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) - Validation state: "Valid"
+2019-01-23 21:04:39.292 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6535ms.
+2019-01-23 21:04:39.313 +13:00 [INF] Executing ViewResult, running view Index.
+2019-01-23 21:04:39.941 +13:00 [INF] Executed ViewResult - view Index executed in 639.2969ms.
+2019-01-23 21:04:39.951 +13:00 [INF] Executed action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) in 674.3968ms
+2019-01-23 21:04:39.977 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.js?v=2vGVyo_WXy2mIr1MFnGFEIq99hyZ4zWD8P1TPTdYDow  
+2019-01-23 21:04:39.981 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.css?v=7EBa6wQOASVwMW-afvwt8k7YGWD5mbpX2HZ-adUoBbo  
+2019-01-23 21:04:39.983 +13:00 [INF] Request finished in 827.0467ms 200 text/html; charset=utf-8
+2019-01-23 21:04:39.988 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/main-client.js?v=n_j2ajJal4cekDgp065dccChAQz3m6LSr6tsyGC9sqo  
+2019-01-23 21:04:40.173 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: wait until bundle finished: /dist/main-client.js?v=n_j2ajJal4cekDgp065dccChAQz3m6LSr6tsyGC9sqo
+2019-01-23 21:04:40.174 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: wait until bundle finished: /dist/vendor.css?v=7EBa6wQOASVwMW-afvwt8k7YGWD5mbpX2HZ-adUoBbo
+2019-01-23 21:04:40.174 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: wait until bundle finished: /dist/vendor.js?v=2vGVyo_WXy2mIr1MFnGFEIq99hyZ4zWD8P1TPTdYDow
+2019-01-23 21:04:45.594 +13:00 [INF] No type errors found
+2019-01-23 21:04:45.594 +13:00 [INF] Version: typescript 3.0.1
+2019-01-23 21:04:45.594 +13:00 [INF] Time: 6259ms
+2019-01-23 21:04:45.597 +13:00 [INF] Node will restart because file changed: C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\wwwroot\dist\main-client.js
+2019-01-23 21:04:45.603 +13:00 [INF] webpack built 8929b9f59a7fc436a7ec in 6692ms
+2019-01-23 21:04:45.761 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: Hash: 8929b9f59a7fc436a7ec
+Version: webpack 4.23.1
+Time: 6692ms
+Built at: 01/23/2019 9:04:45 PM
+                               Asset      Size       Chunks                    Chunk Names
+41b61ebfee29e470850ed2d2d889e33f.png    55 KiB               [emitted]         
+                      main-client.js   617 KiB  main-client  [emitted]  [big]  main-client
+                  main-client.js.map  29.9 KiB  main-client  [emitted]         main-client
+Entrypoint main-client [big] = main-client.js main-client.js.map
+2019-01-23 21:04:45.761 +13:00 [INF] [34mi[39m [90m∩╜ówdm∩╜ú[39m: Compiled successfully.
+2019-01-23 21:04:45.777 +13:00 [INF] Request finished in 5788.5413ms 200 application/javascript; charset=UTF-8
+2019-01-23 21:04:45.784 +13:00 [INF] Sending file. Request path: '/dist/vendor.css'. Physical path: 'C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\wwwroot\dist\vendor.css'
+2019-01-23 21:04:45.784 +13:00 [INF] Request finished in 5803.053ms 200 text/css
+2019-01-23 21:04:45.791 +13:00 [INF] Sending file. Request path: '/dist/vendor.js'. Physical path: 'C:\Users\Beast\source\repos\ReactCoreLatest\ReactCoreLatest\wwwroot\dist\vendor.js'
+2019-01-23 21:04:45.791 +13:00 [INF] Request finished in 5813.3561ms 200 application/javascript
+2019-01-23 21:04:45.999 +13:00 [INF] No type errors found
+2019-01-23 21:04:45.999 +13:00 [INF] Version: typescript 3.0.1
+2019-01-23 21:04:46.000 +13:00 [INF] Time: 6324ms
+2019-01-23 21:04:46.103 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/__webpack_hmr  
+2019-01-23 21:04:46.135 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2019-01-23 21:04:46.137 +13:00 [INF] The file /favicon.ico was not modified
+2019-01-23 21:04:46.139 +13:00 [INF] Request finished in 4.2818ms 304 image/x-icon
+2019-01-23 21:04:49.175 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/main-client.js.map  
+2019-01-23 21:04:49.178 +13:00 [INF] Request finished in 3.1617ms 200 application/json; charset=UTF-8
+2019-01-23 21:04:53.648 +13:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Account/Login application/json;charset=UTF-8 34
+2019-01-23 21:04:53.659 +13:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest)
+2019-01-23 21:04:53.686 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest) with arguments (["ReactCoreLatest.Models.LoginModel"]) - Validation state: "Valid"
+2019-01-23 21:04:53.688 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1.012ms.
+2019-01-23 21:04:53.689 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[ReactCoreLatest.Models.ServiceUser, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-01-23 21:04:53.691 +13:00 [INF] Executed action ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest) in 31.738500000000002ms
+2019-01-23 21:04:53.691 +13:00 [INF] Request finished in 43.4293ms 200 application/json; charset=utf-8
+2019-01-23 21:04:53.710 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/41b61ebfee29e470850ed2d2d889e33f.png  
+2019-01-23 21:04:53.713 +13:00 [INF] Request finished in 2.1084ms 200 image/png; charset=UTF-8
+2019-01-23 21:05:02.815 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person/Search?term=  
+2019-01-23 21:05:02.819 +13:00 [INF] Route matched with {action = "Search", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest)
+2019-01-23 21:05:02.821 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) with arguments ([""]) - Validation state: "Valid"
+2019-01-23 21:05:02.822 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.9395ms.
+2019-01-23 21:05:02.823 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactCoreLatest.Models.PersonModel, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:02.826 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) in 6.8790000000000004ms
+2019-01-23 21:05:02.826 +13:00 [INF] Request finished in 11.216ms 200 application/json; charset=utf-8
+2019-01-23 21:05:06.019 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person/Search?term=test  
+2019-01-23 21:05:06.019 +13:00 [INF] Route matched with {action = "Search", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest)
+2019-01-23 21:05:06.020 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) with arguments (["test"]) - Validation state: "Valid"
+2019-01-23 21:05:06.020 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.4439ms.
+2019-01-23 21:05:06.020 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactCoreLatest.Models.PersonModel, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:06.020 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) in 1.1731ms
+2019-01-23 21:05:06.021 +13:00 [INF] Request finished in 1.7802ms 200 application/json; charset=utf-8
+2019-01-23 21:05:08.469 +13:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Person/Add application/json;charset=UTF-8 45
+2019-01-23 21:05:08.471 +13:00 [INF] Route matched with {action = "Add", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Add (ReactCoreLatest)
+2019-01-23 21:05:08.473 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Add (ReactCoreLatest) with arguments (["ReactCoreLatest.Models.PersonModel"]) - Validation state: "Valid"
+2019-01-23 21:05:08.474 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Add (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1.328ms.
+2019-01-23 21:05:08.474 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:08.476 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Add (ReactCoreLatest) in 4.8847000000000005ms
+2019-01-23 21:05:08.476 +13:00 [INF] Request finished in 6.9595ms 200 application/json; charset=utf-8
+2019-01-23 21:05:23.000 +13:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:64098/api/Person application/json;charset=UTF-8 49
+2019-01-23 21:05:23.001 +13:00 [INF] Route matched with {action = "Index", controller = "Main"}. Executing action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest)
+2019-01-23 21:05:23.002 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) - Validation state: "Valid"
+2019-01-23 21:05:23.002 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2924ms.
+2019-01-23 21:05:23.002 +13:00 [INF] Executing ViewResult, running view Index.
+2019-01-23 21:05:23.289 +13:00 [INF] Executed ViewResult - view Index executed in 287.13480000000004ms.
+2019-01-23 21:05:23.289 +13:00 [INF] Executed action ReactCoreLatest.Controllers.MainController.Index (ReactCoreLatest) in 287.9477ms
+2019-01-23 21:05:23.290 +13:00 [INF] Request finished in 289.4378ms 200 text/html; charset=utf-8
+2019-01-23 21:05:23.291 +13:00 [INF] Connection id "0HLK115M4JFAG", Request id "0HLK115M4JFAG:00000004": the application completed without reading the entire request body.
+2019-01-23 21:05:26.090 +13:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:64098/api/Person/8  
+2019-01-23 21:05:26.091 +13:00 [INF] Route matched with {action = "Delete", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Delete (ReactCoreLatest)
+2019-01-23 21:05:26.092 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Delete (ReactCoreLatest) with arguments (["8"]) - Validation state: "Valid"
+2019-01-23 21:05:26.093 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Delete (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1.1566ms.
+2019-01-23 21:05:26.093 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result'.
+2019-01-23 21:05:26.094 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Delete (ReactCoreLatest) in 2.8186ms
+2019-01-23 21:05:26.094 +13:00 [INF] Request finished in 4.6619ms 200 application/json; charset=utf-8
+2019-01-23 21:05:28.980 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person/Search?term=  
+2019-01-23 21:05:28.980 +13:00 [INF] Route matched with {action = "Search", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest)
+2019-01-23 21:05:28.980 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) with arguments ([""]) - Validation state: "Valid"
+2019-01-23 21:05:28.981 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.0032ms.
+2019-01-23 21:05:28.981 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactCoreLatest.Models.PersonModel, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:28.981 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) in 0.6198ms
+2019-01-23 21:05:28.981 +13:00 [INF] Request finished in 1.2924ms 200 application/json; charset=utf-8
+2019-01-23 21:05:34.215 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person/Search?term=bill  
+2019-01-23 21:05:34.216 +13:00 [INF] Route matched with {action = "Search", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest)
+2019-01-23 21:05:34.217 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) with arguments (["bill"]) - Validation state: "Valid"
+2019-01-23 21:05:34.217 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.25520000000000004ms.
+2019-01-23 21:05:34.218 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactCoreLatest.Models.PersonModel, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:34.218 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) in 1.7068ms
+2019-01-23 21:05:34.218 +13:00 [INF] Request finished in 3.1268ms 200 application/json; charset=utf-8
+2019-01-23 21:05:37.437 +13:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person/Search?term=  
+2019-01-23 21:05:37.437 +13:00 [INF] Route matched with {action = "Search", controller = "Person"}. Executing action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest)
+2019-01-23 21:05:37.438 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) with arguments ([""]) - Validation state: "Valid"
+2019-01-23 21:05:37.438 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.0056ms.
+2019-01-23 21:05:37.438 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactCoreLatest.Models.PersonModel, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-01-23 21:05:37.438 +13:00 [INF] Executed action ReactCoreLatest.Controllers.PersonController.Search (ReactCoreLatest) in 0.93970000000000009ms
+2019-01-23 21:05:37.438 +13:00 [INF] Request finished in 1.8475ms 200 application/json; charset=utf-8
+2019-01-23 21:05:48.428 +13:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Account/Logout  0
+2019-01-23 21:05:48.429 +13:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action ReactCoreLatest.Controllers.AccountController.Logout (ReactCoreLatest)
+2019-01-23 21:05:48.429 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.AccountController.Logout (ReactCoreLatest) - Validation state: "Valid"
+2019-01-23 21:05:48.430 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.AccountController.Logout (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.8241ms.
+2019-01-23 21:05:48.430 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result'.
+2019-01-23 21:05:48.430 +13:00 [INF] Executed action ReactCoreLatest.Controllers.AccountController.Logout (ReactCoreLatest) in 1.2015ms
+2019-01-23 21:05:48.430 +13:00 [INF] Request finished in 2.7661ms 200 application/json; charset=utf-8
+2019-01-23 21:05:51.342 +13:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Account/Login application/json;charset=UTF-8 33
+2019-01-23 21:05:51.342 +13:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest)
+2019-01-23 21:05:51.343 +13:00 [INF] Executing action method ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest) with arguments (["ReactCoreLatest.Models.LoginModel"]) - Validation state: "Valid"
+2019-01-23 21:05:51.343 +13:00 [INF] Executed action method ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.0251ms.
+2019-01-23 21:05:51.343 +13:00 [INF] Executing JsonResult, writing value of type 'ReactCoreLatest.Infrastructure.Result`1[[ReactCoreLatest.Models.ServiceUser, ReactCoreLatest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-01-23 21:05:51.343 +13:00 [INF] Executed action ReactCoreLatest.Controllers.AccountController.Login (ReactCoreLatest) in 0.6651ms
+2019-01-23 21:05:51.343 +13:00 [INF] Request finished in 1.0519ms 200 application/json; charset=utf-8
